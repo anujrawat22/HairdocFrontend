@@ -1,5 +1,5 @@
 import React from 'react';
-import { ReactNode,useState } from 'react';
+import { useState } from 'react';
 import {
   Box,
   IconButton,
@@ -11,7 +11,7 @@ import {
 } from '@chakra-ui/react';
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 import Slider from 'react-slick';
-import { color } from 'framer-motion';
+
 
 const settings = {
   dots: true,
