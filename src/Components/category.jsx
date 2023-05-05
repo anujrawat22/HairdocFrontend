@@ -12,21 +12,17 @@ import {
     useColorModeValue,
   } from '@chakra-ui/react';
   import {
-    IoAnalyticsSharp,
+    
     IoSearchSharp,
-    IoMen,
+    
     IoRose,
-    IoChatbubble
+    
   } from 'react-icons/io5';
-  import { ReactElement } from 'react';
+
   
-  const FeatureProps ={
-    text: String,
-    iconBg: String,
-    icon: ReactElement
-  }
+ 
   
-  const Feature = ({ text, icon, iconBg }=FeatureProps) => {
+  const Feature = ({ text, icon, iconBg }) => {
     return (
       <Stack direction={'row'} align={'center'}>
         <Flex
