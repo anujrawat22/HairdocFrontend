@@ -6,14 +6,18 @@ import reportWebVitals from "./reportWebVitals";
 import { ChakraProvider } from "@chakra-ui/react";
 import { BrowserRouter } from "react-router-dom";
 import Dena from "./contex/auth";
+import { Provider } from "react-redux";
+import { store } from "./store/store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <BrowserRouter>
     <Dena>
-      <ChakraProvider>
-        <App />
-      </ChakraProvider>
+      <Provider store={store}>
+        <ChakraProvider>
+          <App />
+        </ChakraProvider>
+      </Provider>
     </Dena>
   </BrowserRouter>
 );
